@@ -53,7 +53,7 @@ export default function DesktopNav() {
         </LinkButton>
 
         <Select
-          arial-label='Language'
+          aria-label='Language'
           data={LANGUAGE_OPTIONS}
           value={currentLanguageLabel}
           onChange={handleLanguageChange}

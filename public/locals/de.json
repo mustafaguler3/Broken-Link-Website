@@ -126,7 +126,7 @@
     },
     "scan_results_card": {
       "title": "Scan-Ergebnisse",
-      "empty_state": "Geben Sie oben eine URL ein, um mit dem Scannen zu beginnen",
+      "empty_state": "Geben Sie oben eine URL oder ein Repository ein, um mit dem Scannen zu beginnen",
       "loading": "Wird gescannt...",
       "response_time": "Antwortzeit: {{responseTime}}ms",
       "total_response_time": "Gesamtantwortzeit: {{responseTime}}ms",
