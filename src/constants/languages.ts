@@ -3,10 +3,10 @@ export const SUPPORTED_LANGUAGES = [
   { value: 'es', label: 'Spanish' },
   { value: 'fr', label: 'French' },
   { value: 'de', label: 'German' },
-  { value: 'ptbr', label: 'Portuguese' },
+  { value: 'pt-BR', label: 'Portuguese' },
   { value: 'it', label: 'Italian' },
   { value: 'nl', label: 'Dutch' },
-  { value: 'tur', label: 'Türkçe' },
+  { value: 'tr', label: 'Türkçe' },
 ];
 
 export const DEFAULT_LANGUAGE_LABEL = 'English';

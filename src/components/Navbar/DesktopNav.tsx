@@ -2,7 +2,6 @@ import { IconBrandGithub } from '@tabler/icons-react';
 import logo from '/logo.svg';
 import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
-import { Select } from '@mantine/core';
 import { useNavigationLinks } from '@/components/Hooks/useNavigationLinks';
 import {
   DEFAULT_LANGUAGE_LABEL,
@@ -11,6 +10,7 @@ import {
 } from '@/constants/languages';
 import { LinkButton, LinkTarget } from '../UI/Button/LinkButton';
 import { Link } from '../UI/Link/Link';
+import { Select } from '../UI/Select/Select';
 import NavbarLinks from './NavbarLinks';
 import { desktopStyles as styles } from './styles';
 import { ThemeToggle } from './ThemeToggle';
@@ -29,6 +29,7 @@ export default function DesktopNav() {
     }
     const selected = SUPPORTED_LANGUAGES.find((l) => l.label === label)!;
     i18n.changeLanguage(selected.value);
+    localStorage.setItem('lang', selected.value);
   };
 
   return (
@@ -52,11 +53,12 @@ export default function DesktopNav() {
         </LinkButton>
 
         <Select
+          arial-label='Language'
           data={LANGUAGE_OPTIONS}
           value={currentLanguageLabel}
           onChange={handleLanguageChange}
           allowDeselect={false}
-          className={styles.languageSelect.width}
+          style={styles.languageSelect}
         />
         <ThemeToggle />
       </div>

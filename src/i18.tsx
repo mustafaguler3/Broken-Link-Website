@@ -7,7 +7,9 @@ import frTranslations from '../public/locals/fr.json';
 import itTranslations from '../public/locals/it.json';
 import nlTranslations from '../public/locals/nl.json';
 import ptBrTranslations from '../public/locals/ptbr.json';
-import turTranslations from '../public/locals/tur.json';
+import trTranslations from '../public/locals/tur.json';
+
+const savedLang = localStorage.getItem('lang') || 'en';
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -17,14 +19,14 @@ i18n.use(initReactI18next).init({
     es: {
       translation: esTranslations,
     },
-    ptbr: {
+    'pt-BR': {
       translation: ptBrTranslations,
     },
     de: {
       translation: deTranslations,
     },
-    tur: {
-      translation: turTranslations,
+    tr: {
+      translation: trTranslations,
     },
     fr: {
       translation: frTranslations,
@@ -36,7 +38,7 @@ i18n.use(initReactI18next).init({
       translation: nlTranslations,
     },
   },
-  lng: 'en',
+  lng: savedLang,
   fallbackLng: 'en',
   interpolation: {
     escapeValue: false,

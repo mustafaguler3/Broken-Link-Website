@@ -59,7 +59,7 @@
   },
   "charts": {
     "scanActivity": "Activité d'analyse au fil du temps",
-    "linkTypesDistribustion": "Distribution des types de liens"
+    "linkTypesDistribution": "Distribution des types de liens"
   },
   "footer": {
     "header": "Deadlink-Hunter",
@@ -115,7 +115,7 @@
   "how_it_works_feature_title_prefix": "Réparer les liens,",
   "how_it_works_feature_title_highlight": "Un",
   "how_it_works_feature_title_suffix": "Dépôt à la fois",
-  "how_it_works_feature_description": "Considérez Deadlink-Hunter como le médecin de votre dépôt. Nous diagnostiquons les connexions rompues et fournissons un plan de traitement clair.",
+  "how_it_works_feature_description": "Considérez Deadlink-Hunter comme le médecin de votre dépôt. Nous diagnostiquons les connexions rompues et fournissons un plan de traitement clair.",
   "how_it_works_feature_point_1": "Plus d'erreurs 404 dans votre documentation",
   "how_it_works_feature_point_2": "Gardez la confiance des utilisateurs avec des liens valides",
   "how_it_works_feature_point_3": "Maintenez des standards professionnels pour vos dépôts",
